@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1b1b1b;
+  color: #f5f2ec;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 360px; background: #1b1b1b; }
+
+.panel { padding: 24px; }
+
+.eyebrow { color: #d6ff7d; font-size: 10px; font-weight: 700; letter-spacing: .1em; margin-bottom: 12px; }
+
+h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 31px; font-weight: 400; line-height: .95; letter-spacing: -.035em; margin: 0 0 15px; }
+
+.intro { color: #bcb8b2; font-size: 12px; line-height: 1.45; margin: 0 0 20px; }
+
+.selected-card { background: #292826; border-left: 2px solid #d6ff7d; min-height: 76px; padding: 12px 14px; margin-bottom: 20px; }
+.label { display: block; color: #9e9a93; font-size: 9px; font-weight: 700; letter-spacing: .08em; margin-bottom: 6px; }
+.selected-card strong { display: block; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+button { cursor: pointer; font: inherit; }
+.link-button { background: none; border: 0; color: #d6ff7d; font-size: 11px; margin: 8px 0 0; padding: 0; text-decoration: underline; }
+
+label { color: #d6ff7d; display: block; font-size: 11px; font-weight: 700; letter-spacing: .02em; margin-bottom: 7px; }
+.file-field { align-items: center; background: #292826; border: 1px solid #4a4742; display: flex; margin-bottom: 7px; }
+.file-field:focus-within { border-color: #d6ff7d; }
+.file-field input { background: transparent; border: 0; color: #fff; flex: 1; font-size: 13px; min-width: 0; outline: 0; padding: 12px; }
+.file-field span { color: #8e8a83; font-size: 12px; padding-right: 12px; }
+.hint { color: #8e8a83; font-size: 10px; margin: 0 0 15px; }
+
+.notice { border-top: 1px solid #403e3a; color: #d2cec8; font-size: 11px; line-height: 1.4; margin: 17px 0 19px; padding-top: 13px; }
+
+.primary { background: #d6ff7d; border: 0; color: #171717; font-size: 12px; font-weight: 700; padding: 12px 14px; width: 100%; }
+.primary:hover { background: #e2ff9d; }
+.primary:disabled { cursor: wait; opacity: .6; }
+.status { color: #d6ff7d; font-size: 11px; line-height: 1.4; margin: 14px 0 0; min-height: 16px; }
+.status.error { color: #ff9c91; }
