@@ -1,0 +1,7 @@
+# Local diagnostic files (not part of the extension package)
+test-bridge.jsx
+test-bridge-result.txt
+
+# Operating-system files
+.DS_Store
+Thumbs.db
