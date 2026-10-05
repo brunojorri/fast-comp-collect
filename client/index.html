@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto reduzido</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <div class="eyebrow">FAST COMP COLLECT / AFTER EFFECTS</div>
+      <h1>Salvar composição<br />reduzida</h1>
+      <p class="intro">Crie um novo arquivo com somente a composição selecionada e os arquivos de que ela depende.</p>
+
+      <section class="selected-card" aria-live="polite">
+        <span class="label">COMPOSIÇÃO SELECIONADA</span>
+        <strong id="selectedComp">Nenhuma composição identificada</strong>
+        <button class="link-button" id="refreshButton" type="button">Atualizar seleção</button>
+      </section>
+
+      <label for="fileName">Nome da pasta e do arquivo</label>
+      <div class="file-field">
+        <input id="fileName" type="text" autocomplete="off" spellcheck="false" placeholder="nome_do_projeto" />
+        <span>.aep</span>
+      </div>
+      <p class="hint">Ao criar, a janela padrão “Salvar como” permitirá escolher a pasta e confirmar o nome. O painel criará nela uma pasta com esse nome, contendo o arquivo .aep e a subpasta _assets.</p>
+
+      <p class="notice">O projeto atual será salvo antes da exportação e reaberto automaticamente ao final.</p>
+
+      <button class="primary" id="createButton" type="button">Criar arquivo reduzido</button>
+      <p class="status" id="status" role="status"></p>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
